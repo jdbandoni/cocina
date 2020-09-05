@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		80E8BE782503C5EA00708264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE772503C5EA00708264 /* AppDelegate.swift */; };
-		80E8BE7C2503C5EA00708264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE7B2503C5EA00708264 /* ViewController.swift */; };
+		80E8BE7C2503C5EA00708264 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE7B2503C5EA00708264 /* HomeViewController.swift */; };
 		80E8BE812503C5EA00708264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE802503C5EA00708264 /* Assets.xcassets */; };
 		80E8BE842503C5EA00708264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE822503C5EA00708264 /* LaunchScreen.storyboard */; };
 		80E8BE8F2503C5EA00708264 /* CocinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE8E2503C5EA00708264 /* CocinaTests.swift */; };
-		80E8BE9A2503C6D100708264 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE992503C6D100708264 /* ViewController.xib */; };
+		80E8BE9A2503C6D100708264 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE992503C6D100708264 /* HomeViewController.xib */; };
 		80E8BE9D2503CB0100708264 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */; };
 		80E8BE9E2503CB0100708264 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */; };
 		80E8BEA02503CDC300708264 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE9F2503CDC300708264 /* HomePresenter.swift */; };
@@ -21,6 +21,7 @@
 		80E8BEA62503D08E00708264 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA52503D08E00708264 /* MealService.swift */; };
 		80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA72503D1A300708264 /* ServiceError.swift */; };
 		80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA92503D25200708264 /* ReceipeModel.swift */; };
+		80E8BEAC2503D51E00708264 /* HomeInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEAB2503D51E00708264 /* HomeInstance.swift */; };
 		8CC2AFC9426583716501253E /* Pods_Cocina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */; };
 		BF502EA44CC4134A4545F035 /* Pods_CocinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,14 +43,14 @@
 		7DBFEA84F87E3203AB219046 /* Pods-Cocina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocina.release.xcconfig"; path = "Target Support Files/Pods-Cocina/Pods-Cocina.release.xcconfig"; sourceTree = "<group>"; };
 		80E8BE742503C5E900708264 /* Cocina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8BE772503C5EA00708264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80E8BE7B2503C5EA00708264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80E8BE7B2503C5EA00708264 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		80E8BE802503C5EA00708264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E8BE832503C5EA00708264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80E8BE852503C5EA00708264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E8BE8A2503C5EA00708264 /* CocinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E8BE8E2503C5EA00708264 /* CocinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocinaTests.swift; sourceTree = "<group>"; };
 		80E8BE902503C5EA00708264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80E8BE992503C6D100708264 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		80E8BE992503C6D100708264 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 		80E8BE9F2503CDC300708264 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		80E8BEA52503D08E00708264 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
 		80E8BEA72503D1A300708264 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		80E8BEA92503D25200708264 /* ReceipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeModel.swift; sourceTree = "<group>"; };
+		80E8BEAB2503D51E00708264 /* HomeInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstance.swift; sourceTree = "<group>"; };
 		9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,11 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				80E8BE772503C5EA00708264 /* AppDelegate.swift */,
-				80E8BE7B2503C5EA00708264 /* ViewController.swift */,
+				80E8BE7B2503C5EA00708264 /* HomeViewController.swift */,
 				80E8BE802503C5EA00708264 /* Assets.xcassets */,
 				80E8BE822503C5EA00708264 /* LaunchScreen.storyboard */,
 				80E8BE852503C5EA00708264 /* Info.plist */,
-				80E8BE992503C6D100708264 /* ViewController.xib */,
+				80E8BE992503C6D100708264 /* HomeViewController.xib */,
 				80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */,
 				80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */,
 				80E8BE9F2503CDC300708264 /* HomePresenter.swift */,
@@ -119,6 +121,7 @@
 				80E8BEA52503D08E00708264 /* MealService.swift */,
 				80E8BEA72503D1A300708264 /* ServiceError.swift */,
 				80E8BEA92503D25200708264 /* ReceipeModel.swift */,
+				80E8BEAB2503D51E00708264 /* HomeInstance.swift */,
 			);
 			path = Cocina;
 			sourceTree = "<group>";
@@ -237,7 +240,7 @@
 			files = (
 				80E8BE9E2503CB0100708264 /* MealTableViewCell.xib in Resources */,
 				80E8BE842503C5EA00708264 /* LaunchScreen.storyboard in Resources */,
-				80E8BE9A2503C6D100708264 /* ViewController.xib in Resources */,
+				80E8BE9A2503C6D100708264 /* HomeViewController.xib in Resources */,
 				80E8BE812503C5EA00708264 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,9 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */,
-				80E8BE7C2503C5EA00708264 /* ViewController.swift in Sources */,
+				80E8BE7C2503C5EA00708264 /* HomeViewController.swift in Sources */,
 				80E8BEA62503D08E00708264 /* MealService.swift in Sources */,
 				80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */,
+				80E8BEAC2503D51E00708264 /* HomeInstance.swift in Sources */,
 				80E8BE782503C5EA00708264 /* AppDelegate.swift in Sources */,
 				80E8BE9D2503CB0100708264 /* MealTableViewCell.swift in Sources */,
 				80E8BEA22503CF5E00708264 /* MealRepository.swift in Sources */,

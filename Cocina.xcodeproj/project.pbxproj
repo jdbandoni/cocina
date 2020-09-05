@@ -16,6 +16,11 @@
 		80E8BE9D2503CB0100708264 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */; };
 		80E8BE9E2503CB0100708264 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */; };
 		80E8BEA02503CDC300708264 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE9F2503CDC300708264 /* HomePresenter.swift */; };
+		80E8BEA22503CF5E00708264 /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA12503CF5E00708264 /* MealRepository.swift */; };
+		80E8BEA42503CFAB00708264 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA32503CFAB00708264 /* MealModel.swift */; };
+		80E8BEA62503D08E00708264 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA52503D08E00708264 /* MealService.swift */; };
+		80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA72503D1A300708264 /* ServiceError.swift */; };
+		80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA92503D25200708264 /* ReceipeModel.swift */; };
 		8CC2AFC9426583716501253E /* Pods_Cocina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */; };
 		BF502EA44CC4134A4545F035 /* Pods_CocinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +53,11 @@
 		80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 		80E8BE9F2503CDC300708264 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		80E8BEA12503CF5E00708264 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
+		80E8BEA32503CFAB00708264 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		80E8BEA52503D08E00708264 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		80E8BEA72503D1A300708264 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		80E8BEA92503D25200708264 /* ReceipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeModel.swift; sourceTree = "<group>"; };
 		9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +114,11 @@
 				80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */,
 				80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */,
 				80E8BE9F2503CDC300708264 /* HomePresenter.swift */,
+				80E8BEA12503CF5E00708264 /* MealRepository.swift */,
+				80E8BEA32503CFAB00708264 /* MealModel.swift */,
+				80E8BEA52503D08E00708264 /* MealService.swift */,
+				80E8BEA72503D1A300708264 /* ServiceError.swift */,
+				80E8BEA92503D25200708264 /* ReceipeModel.swift */,
 			);
 			path = Cocina;
 			sourceTree = "<group>";
@@ -288,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */,
 				80E8BE7C2503C5EA00708264 /* ViewController.swift in Sources */,
+				80E8BEA62503D08E00708264 /* MealService.swift in Sources */,
+				80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */,
 				80E8BE782503C5EA00708264 /* AppDelegate.swift in Sources */,
 				80E8BE9D2503CB0100708264 /* MealTableViewCell.swift in Sources */,
+				80E8BEA22503CF5E00708264 /* MealRepository.swift in Sources */,
+				80E8BEA42503CFAB00708264 /* MealModel.swift in Sources */,
 				80E8BEA02503CDC300708264 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

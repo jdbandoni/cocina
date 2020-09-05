@@ -13,3 +13,8 @@ enum HomeUsesCases {
     case homeFetchEmpty
     case homeFetchFive
 }
+
+enum HomeServiceUsesCases {
+    case success
+    case failure
+}

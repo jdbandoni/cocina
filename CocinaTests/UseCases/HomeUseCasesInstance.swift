@@ -11,13 +11,27 @@ import Foundation
 
 class HomeUseCasesInstance {
     
+    static func resolveMealRepository(useCase: HomeServiceUsesCases) -> MealRepository {
+        let mealRepository = MealRepository(service: resolveMealService(useCase: useCase))
+        return mealRepository
+    }
+    
+    static private func resolveMealService(useCase: HomeServiceUsesCases) -> MealServiceProtocol {
+        switch useCase {
+        case .success:
+            return MealServiceMock()
+        case .failure:
+            return MealServiceMock(shouldFail: true)
+        }
+    }
+    
     static func resolvePresenter(useCase: HomeUsesCases, view: HomeViewDelegate, queue: DispatchQueue) -> HomePresenter {
         let presenter = HomePresenter(repository: resolveRepository(useCase: useCase), queue: queue)
         presenter.view = view
         return presenter
     }
     
-    static func resolveRepository(useCase: HomeUsesCases) -> MealRepositoryProtocol {
+    static private func resolveRepository(useCase: HomeUsesCases) -> MealRepositoryProtocol {
         switch useCase {
         case .homeFetchEmpty:
             let mock = mockMeals(count: 0)

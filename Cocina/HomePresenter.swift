@@ -11,6 +11,8 @@ import Foundation
 protocol HomeViewDelegate: class {
     func showLoading()
     func hideLoading()
+    func show(items: [MealModel])
+    func showAlert(title: String, message: String)
 }
 
 class HomePresenter {
@@ -29,7 +31,7 @@ class HomePresenter {
     }
     
     
-    private func getMeals(search: String) {
+    func getMeals(search: String) {
         view?.showLoading()
         repository.getMeals(search: search, onSuccess: { (meals) in
             self.handleOnSuccess(meals)
@@ -41,14 +43,14 @@ class HomePresenter {
     private func handleOnSuccess(_ meals: [MealModel]) {
         self.queue.async {
             self.view?.hideLoading()
-            //show
+            self.view?.show(items: meals)
         }
     }
     
     private func handleOnError() {
         self.queue.async {
             self.view?.hideLoading()
-            //Error
+            self.view?.showAlert(title: "Error", message: "Ups! Algo salió mal")
         }
     }
     

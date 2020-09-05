@@ -22,6 +22,7 @@
 		80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA72503D1A300708264 /* ServiceError.swift */; };
 		80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEA92503D25200708264 /* ReceipeModel.swift */; };
 		80E8BEAC2503D51E00708264 /* HomeInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEAB2503D51E00708264 /* HomeInstance.swift */; };
+		80E8BEAF2503DA5400708264 /* UIImageView+loadUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEAE2503DA5400708264 /* UIImageView+loadUrl.swift */; };
 		8CC2AFC9426583716501253E /* Pods_Cocina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */; };
 		BF502EA44CC4134A4545F035 /* Pods_CocinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		80E8BEA72503D1A300708264 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		80E8BEA92503D25200708264 /* ReceipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeModel.swift; sourceTree = "<group>"; };
 		80E8BEAB2503D51E00708264 /* HomeInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstance.swift; sourceTree = "<group>"; };
+		80E8BEAE2503DA5400708264 /* UIImageView+loadUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+loadUrl.swift"; sourceTree = "<group>"; };
 		9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 		80E8BE762503C5E900708264 /* Cocina */ = {
 			isa = PBXGroup;
 			children = (
+				80E8BEAD2503DA3E00708264 /* Utils */,
 				80E8BE772503C5EA00708264 /* AppDelegate.swift */,
 				80E8BE7B2503C5EA00708264 /* HomeViewController.swift */,
 				80E8BE802503C5EA00708264 /* Assets.xcassets */,
@@ -133,6 +136,14 @@
 				80E8BE902503C5EA00708264 /* Info.plist */,
 			);
 			path = CocinaTests;
+			sourceTree = "<group>";
+		};
+		80E8BEAD2503DA3E00708264 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BEAE2503DA5400708264 /* UIImageView+loadUrl.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A911468A0E569722BE08E9AE /* Frameworks */ = {
@@ -308,6 +319,7 @@
 			files = (
 				80E8BEA82503D1A300708264 /* ServiceError.swift in Sources */,
 				80E8BE7C2503C5EA00708264 /* HomeViewController.swift in Sources */,
+				80E8BEAF2503DA5400708264 /* UIImageView+loadUrl.swift in Sources */,
 				80E8BEA62503D08E00708264 /* MealService.swift in Sources */,
 				80E8BEAA2503D25200708264 /* ReceipeModel.swift in Sources */,
 				80E8BEAC2503D51E00708264 /* HomeInstance.swift in Sources */,

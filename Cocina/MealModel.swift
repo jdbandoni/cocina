@@ -12,4 +12,5 @@ struct MealModel: Codable {
     let idMeal: String
     let strMeal: String
     let strMealThumb: String
+    let strCategory: String
 }

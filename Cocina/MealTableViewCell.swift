@@ -10,15 +10,20 @@ import UIKit
 
 class MealTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell(image: String, name: String, category: String) {
+        nameLabel.text = name
+        categoryLabel.text = category
+        
+        guard let url = URL(string: image) else { return }
+        iconImageView.load(url: url)
     }
     
 }

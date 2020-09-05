@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AC51356A7B0E5DC7EABEF93 /* Pods_Cocina_CocinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7222E940D75859D5A37BFA4 /* Pods_Cocina_CocinaTests.framework */; };
 		80E8BE782503C5EA00708264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE772503C5EA00708264 /* AppDelegate.swift */; };
 		80E8BE7C2503C5EA00708264 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BE7B2503C5EA00708264 /* HomeViewController.swift */; };
 		80E8BE812503C5EA00708264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E8BE802503C5EA00708264 /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		80E8BEAC2503D51E00708264 /* HomeInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEAB2503D51E00708264 /* HomeInstance.swift */; };
 		80E8BEAF2503DA5400708264 /* UIImageView+loadUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8BEAE2503DA5400708264 /* UIImageView+loadUrl.swift */; };
 		8CC2AFC9426583716501253E /* Pods_Cocina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */; };
-		BF502EA44CC4134A4545F035 /* Pods_CocinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,9 @@
 		80E8BEAB2503D51E00708264 /* HomeInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstance.swift; sourceTree = "<group>"; };
 		80E8BEAE2503DA5400708264 /* UIImageView+loadUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+loadUrl.swift"; sourceTree = "<group>"; };
 		9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7222E940D75859D5A37BFA4 /* Pods_Cocina_CocinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocina_CocinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76B10F094322C0C5D4E32F7 /* Pods-Cocina-CocinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocina-CocinaTests.debug.xcconfig"; path = "Target Support Files/Pods-Cocina-CocinaTests/Pods-Cocina-CocinaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F03BCD9C8811F9D332423B49 /* Pods-Cocina-CocinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocina-CocinaTests.release.xcconfig"; path = "Target Support Files/Pods-Cocina-CocinaTests/Pods-Cocina-CocinaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF502EA44CC4134A4545F035 /* Pods_CocinaTests.framework in Frameworks */,
+				5AC51356A7B0E5DC7EABEF93 /* Pods_Cocina_CocinaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,21 +111,16 @@
 		80E8BE762503C5E900708264 /* Cocina */ = {
 			isa = PBXGroup;
 			children = (
+				80E8BEB52503EDAA00708264 /* Service */,
+				80E8BEB42503EDA000708264 /* Repository */,
+				80E8BEB32503ED8E00708264 /* Model */,
+				80E8BEB22503ED7800708264 /* View */,
+				80E8BEB12503ED6A00708264 /* Presenter */,
 				80E8BEAD2503DA3E00708264 /* Utils */,
 				80E8BE772503C5EA00708264 /* AppDelegate.swift */,
-				80E8BE7B2503C5EA00708264 /* HomeViewController.swift */,
 				80E8BE802503C5EA00708264 /* Assets.xcassets */,
 				80E8BE822503C5EA00708264 /* LaunchScreen.storyboard */,
 				80E8BE852503C5EA00708264 /* Info.plist */,
-				80E8BE992503C6D100708264 /* HomeViewController.xib */,
-				80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */,
-				80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */,
-				80E8BE9F2503CDC300708264 /* HomePresenter.swift */,
-				80E8BEA12503CF5E00708264 /* MealRepository.swift */,
-				80E8BEA32503CFAB00708264 /* MealModel.swift */,
-				80E8BEA52503D08E00708264 /* MealService.swift */,
-				80E8BEA72503D1A300708264 /* ServiceError.swift */,
-				80E8BEA92503D25200708264 /* ReceipeModel.swift */,
 				80E8BEAB2503D51E00708264 /* HomeInstance.swift */,
 			);
 			path = Cocina;
@@ -146,11 +143,56 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		80E8BEB12503ED6A00708264 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BE9F2503CDC300708264 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		80E8BEB22503ED7800708264 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BE992503C6D100708264 /* HomeViewController.xib */,
+				80E8BE7B2503C5EA00708264 /* HomeViewController.swift */,
+				80E8BE9B2503CB0100708264 /* MealTableViewCell.swift */,
+				80E8BE9C2503CB0100708264 /* MealTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80E8BEB32503ED8E00708264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BEA92503D25200708264 /* ReceipeModel.swift */,
+				80E8BEA32503CFAB00708264 /* MealModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80E8BEB42503EDA000708264 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BEA12503CF5E00708264 /* MealRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		80E8BEB52503EDAA00708264 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80E8BEA52503D08E00708264 /* MealService.swift */,
+				80E8BEA72503D1A300708264 /* ServiceError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		A911468A0E569722BE08E9AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9B5BB92EA06DE49C70817971 /* Pods_Cocina.framework */,
-				C6C2BE81D415682F6D13BF12 /* Pods_CocinaTests.framework */,
+				A7222E940D75859D5A37BFA4 /* Pods_Cocina_CocinaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +204,8 @@
 				7DBFEA84F87E3203AB219046 /* Pods-Cocina.release.xcconfig */,
 				3266CFCF3374C4EDD6DE257C /* Pods-CocinaTests.debug.xcconfig */,
 				39249409754C35F8ABDE9767 /* Pods-CocinaTests.release.xcconfig */,
+				A76B10F094322C0C5D4E32F7 /* Pods-Cocina-CocinaTests.debug.xcconfig */,
+				F03BCD9C8811F9D332423B49 /* Pods-Cocina-CocinaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,6 +239,7 @@
 				80E8BE862503C5EA00708264 /* Sources */,
 				80E8BE872503C5EA00708264 /* Frameworks */,
 				80E8BE882503C5EA00708264 /* Resources */,
+				0D8B696FAB9172F822A3F545 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +311,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D8B696FAB9172F822A3F545 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocina-CocinaTests/Pods-Cocina-CocinaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocina-CocinaTests/Pods-Cocina-CocinaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cocina-CocinaTests/Pods-Cocina-CocinaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4C6AB704200A009D63FA2E37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,7 +343,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CocinaTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Cocina-CocinaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,7 +577,7 @@
 		};
 		80E8BE972503C5EA00708264 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3266CFCF3374C4EDD6DE257C /* Pods-CocinaTests.debug.xcconfig */;
+			baseConfigurationReference = A76B10F094322C0C5D4E32F7 /* Pods-Cocina-CocinaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,7 +599,7 @@
 		};
 		80E8BE982503C5EA00708264 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39249409754C35F8ABDE9767 /* Pods-CocinaTests.release.xcconfig */;
+			baseConfigurationReference = F03BCD9C8811F9D332423B49 /* Pods-Cocina-CocinaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -21,6 +21,12 @@ class HomeViewController: UIViewController {
         }
     }
     
+    var spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .white)
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        return spinner
+    }()
+    
     required init(presenter: HomePresenter) {
         self.presenter = presenter
         super.init(nibName: String(describing: HomeViewController.self), bundle: Bundle.main)
@@ -32,6 +38,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Busca tus recetas"
         setupView()
         presenter.viewLoaded()
     }
@@ -39,6 +46,7 @@ class HomeViewController: UIViewController {
 
     private func setupView() {
         tableView.register(UINib(nibName: "MealTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
+        tableView.rowHeight = 132
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
@@ -60,11 +68,19 @@ extension HomeViewController: HomeViewDelegate {
     }
     
     func showLoading() {
-        
+        spinner.startAnimating()
+        view.addSubview(spinner)
+        view.bringSubviewToFront(spinner)
+
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     func hideLoading() {
-        
+        if spinner.isDescendant(of: self.view) {
+            spinner.stopAnimating()
+            spinner.removeFromSuperview()
+        }
     }
     
     

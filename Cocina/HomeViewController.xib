@@ -20,16 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-jD-f0x">
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Busca tus recetas" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-jD-f0x">
                     <rect key="frame" x="0.0" y="51" width="414" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" red="1" green="0.91760905311271135" blue="0.70505705334020741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="58H-cm-bCO">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="58H-cm-bCO">
                     <rect key="frame" x="0.0" y="107" width="414" height="755"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="58H-cm-bCO" secondAttribute="bottom" id="0xU-Bk-a7v"/>
                 <constraint firstItem="Ldy-jD-f0x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="IGd-nJ-pY5"/>

@@ -16,6 +16,8 @@ class MealTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        iconImageView.layer.cornerRadius = 6
     }
     
     func configureCell(image: String, name: String, category: String) {

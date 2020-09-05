@@ -27,9 +27,8 @@ class HomePresenter {
     }
     
     func viewLoaded() {
-        
+        getMeals(search: "")
     }
-    
     
     func getMeals(search: String) {
         view?.showLoading()
